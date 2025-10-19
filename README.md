@@ -70,14 +70,13 @@ cmake --build . --config Release
 ```
 
 Or with MSVC directly:
-
 ```bash
-cl main.cpp /std:c++17 /I include /link user32.lib kernel32.lib
+cl main.cpp /std:c++17 /I include /O2 /MD /DNDEBUG /utf-8 /EHsc /link /RELEASE user32.lib kernel32.lib imm32.lib
 ```
 
 Or with MinGW directly:
 ```bash
-g++ main.cpp -std=c++17 -I include -O2 -luser32 -lkernel32 -o antiafk.exe
+g++ main.cpp -std=c++17 -I include -O2 -DNDEBUG -luser32 -lkernel32 -limm32 -o antiafk.exe
 ```
 
 ## How It Works
