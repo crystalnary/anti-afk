@@ -30,6 +30,8 @@ antiafk <process_name> [options]
 
 * `-a, --action <type>` - Set action type: `space`, `wasd`, or `zoom` (default: space)
 
+* `-s, --safe` - Enable User-Safe mode (waits for inactivity)
+
 * `-h, --help` - Show help
 
 ### Examples
