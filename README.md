@@ -56,11 +56,9 @@ antiafk RobloxPlayerBeta.exe -i 600 -a zoom
 
 * Windows
 
-* CMake 3.10+
+* CMake 3.10+ (optional)
 
 * C++17 compiler (MSVC or MinGW)
-
-* spdlog headers (header-only logging library)
 
 ### Build Steps
 
