@@ -151,7 +151,6 @@ void antiafk_loop(const Config& config) {
     }
     
     while (running) {
-        HWND previousWindow = GetForegroundWindow();
         auto windows = find_process_windows(config.process_name);
         
         if (windows.empty()) {
@@ -188,6 +187,7 @@ void antiafk_loop(const Config& config) {
                 }
             }
             
+            HWND previousWindow = GetForegroundWindow();
             BlockInput(TRUE);
             {
                 for (HWND window : windows) {
